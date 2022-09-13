@@ -1,0 +1,33 @@
+{
+  "name": "@lc/mini-html-webpack-plugin",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "王同超 <tongchaowang01.gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "postdev": "cp default_index.ejs dist"
+  },
+  "devDependencies": {
+    "@types/html-minifier-terser": "^7.0.0",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "html-minifier-terser": "^7.0.0",
+    "tapable": "^2.2.1"
+  }
+}
